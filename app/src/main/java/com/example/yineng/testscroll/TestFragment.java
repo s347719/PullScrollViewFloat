@@ -127,19 +127,19 @@ public class TestFragment extends Fragment implements ScrollViewFinal.OnScrollLi
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        mGameList.clear();
-                        for (int i = 0; i < 5; i++) {
-                            GameInfo info = new GameInfo();
-                            info.setName("你是我大哥");
-                            mGameList.add(info);
-                        }
+//                        mGameList.clear();
+//                        for (int i = 0; i < 5; i++) {
+//                            GameInfo info = new GameInfo();
+//                            info.setName("你是我大哥");
+//                            mGameList.add(info);
+//                        }
                         mSvGames.setHasLoadMore(false);
 //                        mSvGames.showFailUI();
                         mSvGames.onLoadMoreComplete();
                         mNewGameListAdapter.notifyDataSetChanged();
                     }
                 },5000);
-                requestData(mPage);
+//                requestData(mPage);
 
             }
         });
